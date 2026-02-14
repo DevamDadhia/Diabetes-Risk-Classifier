@@ -1,0 +1,1 @@
+An ML-based diabetes prediction system built using the Pima Indians dataset.Implements data preprocessing with StandardScaler and classification using SVM . Demonstrates complete ML pipeline from data analysis to model evaluation and real time prediction.
