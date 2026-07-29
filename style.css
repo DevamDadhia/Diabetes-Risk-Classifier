@@ -1,0 +1,303 @@
+/* ==========================
+   IMPORT FONT
+========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+html, body, [class*="css"] {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ==========================
+   MAIN BACKGROUND
+========================== */
+
+.stApp {
+    background: linear-gradient(135deg, #0F172A, #111827, #1E293B);
+    background-attachment: fixed;
+    color: white;
+}
+
+/* ==========================
+   HIDE DEFAULT STREAMLIT
+========================== */
+
+#MainMenu {
+    visibility: hidden;
+}
+
+footer {
+    visibility: hidden;
+}
+
+header {
+    visibility: hidden;
+}
+
+/* ==========================
+   HERO
+========================== */
+
+.hero{
+    text-align:center;
+    padding:30px;
+    margin-bottom:25px;
+}
+
+.hero h1{
+    font-size:3rem;
+    color:white;
+    margin-bottom:10px;
+}
+
+.hero p{
+    color:#CBD5E1;
+    font-size:18px;
+}
+
+/* ==========================
+   GLASS CARD
+========================== */
+
+.glass{
+
+    background:rgba(255,255,255,.08);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    backdrop-filter:blur(12px);
+
+    border-radius:18px;
+
+    padding:25px;
+
+    margin-bottom:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.30);
+
+}
+
+/* ==========================
+   BUTTON
+========================== */
+
+.stButton > button{
+
+    width:100%;
+
+    height:55px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:linear-gradient(90deg,#38BDF8,#0EA5E9);
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    transition:0.3s;
+
+    box-shadow:0 8px 25px rgba(56,189,248,.35);
+
+}
+
+.stButton > button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 15px 35px rgba(56,189,248,.55);
+
+    background:linear-gradient(90deg,#0EA5E9,#0284C7);
+
+}
+
+/* ==========================
+   FILE UPLOADER
+========================== */
+
+[data-testid="stFileUploader"]{
+
+    border:2px dashed #38BDF8;
+
+    border-radius:18px;
+
+    background:rgba(255,255,255,.04);
+
+    padding:18px;
+
+}
+
+/* ==========================
+   IMAGE
+========================== */
+
+.stImage img{
+
+    border-radius:18px;
+
+    border:2px solid rgba(255,255,255,.15);
+
+    box-shadow:0 12px 30px rgba(0,0,0,.40);
+
+}
+
+/* ==========================
+   PREDICTION CARD
+========================== */
+
+.prediction-card{
+
+    background:rgba(255,255,255,.08);
+
+    border-radius:20px;
+
+    padding:25px;
+
+    margin-top:20px;
+
+    margin-bottom:25px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.35);
+
+    text-align:center;
+
+    animation:fadeUp .8s ease;
+
+}
+
+.prediction-card h2{
+
+    color:white;
+
+    font-size:30px;
+
+    margin-bottom:10px;
+
+}
+
+.prediction-card h1{
+
+    color:#38BDF8;
+
+    font-size:52px;
+
+    margin-bottom:5px;
+
+}
+
+.prediction-card p{
+
+    color:#CBD5E1;
+
+    font-size:16px;
+
+}
+
+/* ==========================
+   METRICS
+========================== */
+
+[data-testid="metric-container"]{
+
+    background:rgba(255,255,255,.06);
+
+    border-radius:15px;
+
+    padding:15px;
+
+    border:1px solid rgba(255,255,255,.12);
+
+}
+/* ==========================
+   SIDEBAR
+========================== */
+
+section[data-testid="stSidebar"]{
+
+    background:#111827;
+
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+.footer{
+
+    text-align:center;
+
+    margin-top:60px;
+
+    padding:30px;
+
+    color:#94A3B8;
+
+}
+
+.footer h3{
+
+    color:white;
+
+}
+
+/* ==========================
+   SCROLLBAR
+========================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#38BDF8;
+
+    border-radius:20px;
+
+}
+
+/* ==========================
+   ANIMATION
+========================== */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(25px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================
+   HEADINGS
+========================== */
+
+h1,h2,h3{
+
+    color:white;
+
+}
+
+p{
+
+    color:#CBD5E1;
+
+}
